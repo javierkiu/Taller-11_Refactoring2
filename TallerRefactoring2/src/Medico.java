@@ -4,7 +4,7 @@ public class Medico extends Persona {
         super(nombre, edad, genero, direccion, telefono, correoElectronico);
     }
 
-    public void realizaConsul(Paciente paciente, HistorialMedico medico, SistemaAtencionMedico sistemaAtencionMedico) {
+    public void realizaConsul(Paciente paciente) {
         String tratamiento;
         System.out.println("Realizando consulta a " + paciente.getNombre() +
                 " (Solo se usa el objeto persona en este metodo...)");
@@ -20,5 +20,10 @@ public class Medico extends Persona {
 
     public void adminMedicamento(Paciente paciente, String medicamento) {
         // Implementación para administrar medicamentos al paciente.
+    }
+
+    @Override
+    public String toString(){
+        return super.getNombre();
     }
 }
