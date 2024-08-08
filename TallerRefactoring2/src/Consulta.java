@@ -13,7 +13,7 @@ public class Consulta {
     private String tratamiento;
     private List<String> examenesMedicos;
 
-    public Consulta(int dia, int mes, int año, String hora, Paciente paciente, Medico medico, ServicioMedico servicioMedico, String diagnostico, String tratamiento, List<String> examenesMedicos) {
+    public Consulta(int dia, int mes, int año, String hora, Paciente paciente, Medico medico, ServicioMedico servicioMedico) {
         this.dia = dia;
         this.mes = mes;
         this.año = año;
