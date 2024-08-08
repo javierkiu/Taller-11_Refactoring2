@@ -51,6 +51,6 @@ public class ServicioMedico {
 
     @Override
     public String toString(){
-        return nombre;
+        return getNombre();
     }
 }
