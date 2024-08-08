@@ -51,4 +51,29 @@ public class SistemaAtencionMedico {
         }
         return null;
     }
+
+    public List<Paciente> getPacientes() {
+        return pacientes;
+    }
+
+    public List<Medico> getMedicos() {
+        return medicos;
+    }
+
+    public List<ServicioMedico> getServiciosMedicos() {
+        return serviciosMedicos;
+    }
+
+    public void setPacientes(List<Paciente> pacientes) {
+        this.pacientes = pacientes;
+    }
+
+    public void setMedicos(List<Medico> medicos) {
+        this.medicos = medicos;
+    }
+
+    public void setServiciosMedicos(List<ServicioMedico> serviciosMedicos) {
+        this.serviciosMedicos = serviciosMedicos;
+    }
+    
 }
