@@ -21,4 +21,9 @@ public class Medico extends Persona {
     public void adminMedicamento(Paciente paciente, String medicamento) {
         // Implementación para administrar medicamentos al paciente.
     }
+
+    @Override
+    public String toString(){
+        return super.getNombre();
+    }
 }

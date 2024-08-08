@@ -48,4 +48,9 @@ public class ServicioMedico {
 
         this.duracion = duracion;
     }
+
+    @Override
+    public String toString(){
+        return nombre;
+    }
 }
