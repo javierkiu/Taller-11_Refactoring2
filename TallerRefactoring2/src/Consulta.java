@@ -1,5 +1,6 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Collections;
 import java.util.List;
 
 public class Consulta {
@@ -72,13 +73,18 @@ public class Consulta {
         this.tratamiento = tratamiento;
     }
 
-    public List<String> getExamenesMedicos() {
-        return examenesMedicos;
+    public void addBook(String examen) {
+        examenesMedicos.add(examen);
     }
 
-    public void setExamenesMedicos(List<String> examenesMedicos) {
-        this.examenesMedicos = examenesMedicos;
+    public void removeBook(String examen) {
+        examenesMedicos.remove(examen);
     }
+
+    public List<String> getExamenesMedicos() {
+        return Collections.unmodifiableList(examenesMedicos);
+    }
+
 
     public ServicioMedico getServicioMedico() {
         return servicioMedico;
